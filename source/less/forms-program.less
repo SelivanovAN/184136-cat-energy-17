@@ -1,0 +1,235 @@
+.forms-program {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 22px;
+  box-sizing: border-box;
+}
+
+.forms-program__title-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.forms-program__title {
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.forms-program__about {
+  padding-right: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.forms-program__introduce-wrapper {
+  margin-top: 35px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.forms-program__introduce-label {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  box-sizing: border-box;
+}
+
+.forms-program__introduce-text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.forms-program__introduce-text--big {
+  text-transform: uppercase;
+}
+
+.forms-program__introduce-input {
+  flex-grow: 1;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 16px;
+  margin-left: 15px;
+  margin-bottom: 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.forms-program__introduce-input:last-child {
+  margin-left: 8px;
+}
+
+.forms-program__introduce-input--big {
+  text-transform: uppercase;
+}
+
+.forms-program__choise {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.forms-program__choise-item {
+  display: none;
+}
+
+.forms-program__choise-label {
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 46px;
+  margin-bottom: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.forms-program__choise-label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #d2d2d2;
+  left: 0;
+  top: -6px;
+}
+
+.forms-program__choise-item:checked + .forms-program__choise-label::after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 3px;
+  width: 12px;
+  height: 12px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+@media (min-width: @tablet-widths) {
+  .forms-program__title-wrapper {
+    padding-left: 70px;
+    padding-right: 109px;
+  }
+
+  .forms-program__title {
+    font-size: 60px;
+  }
+
+  .forms-program__about {
+    width: 350px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .forms-program__introduce-wrapper {
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  .forms-program__introduce-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .forms-program__introduce-input {
+    font-size: 20px;
+    line-height: 20px;
+    height: 52px;
+  }
+
+  .forms-program__choise {
+    margin-left: 70px;
+    border-left: 1px solid #ededed;
+  }
+
+  .forms-program__choise-label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .forms-program {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .forms-program__title-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 500px;
+  }
+
+  .forms-program__title {
+    font-size: 60px;
+  }
+
+  .forms-program__about {
+    width: 350px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .forms-program__introduce-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 80px;
+  }
+
+  .forms-program__introduce-label-wrapper {
+    width: 570px;
+    box-sizing: border-box;
+  }
+
+  .forms-program__introduce-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .forms-program__introduce-input {
+    font-size: 20px;
+    line-height: 20px;
+    height: 52px;
+  }
+
+  .forms-program__choise {
+    min-width: 570px;
+    box-sizing: border-box;
+    height: 183px;
+    margin: 0;
+    margin-top: 35px;
+    border-right: 1px solid #ededed;
+  }
+
+  .forms-program__choise-label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

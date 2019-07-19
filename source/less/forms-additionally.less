@@ -1,0 +1,96 @@
+.forms-additionally-item-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.forms-additionally-item__checkbox {
+  display: none;
+}
+
+.forms-additionally__label {
+  position: relative;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  padding-left: 46px;
+  margin-bottom: 26px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.forms-additionally__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -6px;
+  width: 29px;
+  height: 29px;
+  box-sizing: border-box;
+  border: 1px solid #cfcfcf;
+}
+
+.forms-additionally-item__checkbox:checked + .forms-additionally__label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-widths) {
+  .forms-additionally-item-wrapper {
+    width: 632px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .forms-additionally__label {
+    width: 300px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .forms-additionally__label::before {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+  }
+
+  .forms-additionally-item__checkbox:checked + .forms-additionally__label::after {
+    top: 5px;
+    left: 10px;
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .forms-additionally-item-wrapper {
+    width: 1220px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .forms-additionally__label {
+    width: 300px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .forms-additionally__label::before {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+  }
+
+  .forms-additionally-item__checkbox:checked + .forms-additionally__label::after {
+    top: 5px;
+    left: 10px;
+  }
+}
