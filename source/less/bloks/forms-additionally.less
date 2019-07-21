@@ -1,4 +1,4 @@
-.forms-additionally-item-wrapper {
+.forms-additionally__item-wrapper {
   width: 280px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 
-.forms-additionally-item__checkbox {
+.forms-additionally__item-checkbox {
   display: none;
 }
 
@@ -34,7 +34,7 @@
   border: 1px solid #cfcfcf;
 }
 
-.forms-additionally-item__checkbox:checked + .forms-additionally__label::after {
+.forms-additionally__item-checkbox:checked + .forms-additionally__label::after {
   content: "";
   position: absolute;
   top: 2px;
@@ -46,7 +46,7 @@
 }
 
 @media (min-width: @tablet-widths) {
-  .forms-additionally-item-wrapper {
+  .forms-additionally__item-wrapper {
     width: 632px;
     flex-wrap: wrap;
     flex-direction: row;
@@ -64,14 +64,14 @@
     box-sizing: border-box;
   }
 
-  .forms-additionally-item__checkbox:checked + .forms-additionally__label::after {
+  .forms-additionally__item-checkbox:checked + .forms-additionally__label::after {
     top: 5px;
     left: 10px;
   }
 }
 
 @media (min-width: @desktop-widths) {
-  .forms-additionally-item-wrapper {
+  .forms-additionally__item-wrapper {
     width: 1220px;
     flex-wrap: wrap;
     flex-direction: row;
@@ -89,7 +89,7 @@
     box-sizing: border-box;
   }
 
-  .forms-additionally-item__checkbox:checked + .forms-additionally__label::after {
+  .forms-additionally__item-checkbox:checked + .forms-additionally__label::after {
     top: 5px;
     left: 10px;
   }
