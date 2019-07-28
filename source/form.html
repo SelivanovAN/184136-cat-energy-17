@@ -11,9 +11,8 @@
       <div class="page-header__wrapper">
         <nav class="main-nav">
           <ul class="main-nav__items">
-            <li class="main-nav__item"><a class="main-nav__logo"><img class="main-nav__logo-image" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Картинка компании"></a></li>
-            <li class="main-nav__item"><a class="main-nav__logo-text"><img class="main-nav__logo-text-image" src="img/logo-mobile-header.svg" width="101" height="18" alt="Картинка компании"></a></li>
-            <li class="main-nav__item"><button class="page-header__close" type="button">Закрыть меню</button></li>
+            <li class="main-nav__item"><a class="main-nav__logo"><img class="main-nav__logo-image" src="img/logo-desktop.svg" width="33" height="38" alt="Картинка компании"></a></li>
+            <li class="main-nav__item  main-nav__item-btn--off"><button class="page-header__close" type="button">Закрыть меню</button></li>
           </ul>
           <ul class="main-nav__lists">
             <li class="main-nav__list"><a class="main-nav__link  main-nav__link--active" href="./index.html">Главная</a></li>
@@ -23,14 +22,14 @@
         </nav>
       </div>
     </header>
-    <section class="info-forms">
+    <section class="info-forms   forms-contact  forms-additionally">
       <form class="info-forms__elements" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
         <div class="info-forms__wrapper">
           <section class="info-forms__program  forms-program">
             <div class="forms-program__title-wrapper">
               <h2 class="forms-program__title">Подбор программы</h2>
               <p class="forms-program__about">Заполните анкету и мы подберем  программу питания для вашего кота</p>
-          </div>
+            </div>
             <section class="forms-program__introduce-wrapper">
               <section class="forms-program__introduce-label-wrapper">
                 <label class="forms-program__introduce-label">
@@ -48,55 +47,60 @@
               </section>
             </section>
             <section class="forms-program__choise">
-              <input class="forms-program__choise-item" type="radio" name="forms-program__choise-item" id="loss-field" value="loss" checked><label class="forms-program__choise-label" for="loss-field">Похудение</label>
-              <input class="forms-program__choise-item" type="radio" name="forms-program__choise-item" id="weght-field" value="weght"><label class="forms-program__choise-label" for="weght-field">Набор Массы</label>
-              <input class="forms-program__choise-item" type="radio" name="forms-program__choise-item" id="know-field" value="dont"><label class="forms-program__choise-label" for="know-field">Не знаю (нужен ваш совет)</label>
+              <input class="forms-program__choise-item" type="radio" name="forms-program__choise-item" id="loss-field" value="loss" checked>
+              <label class="forms-program__choise-label" for="loss-field">Похудение</label>
+              <input class="forms-program__choise-item" type="radio" name="forms-program__choise-item" id="weght-field" value="weght">
+              <label class="forms-program__choise-label" for="weght-field">Набор Массы</label>
+              <input class="forms-program__choise-item" type="radio" name="forms-program__choise-item" id="know-field" value="dont">
+              <label class="forms-program__choise-label" for="know-field">Не знаю (нужен ваш совет)</label>
             </section>
           </section>
-          <section class="forms-contact-legend">
-            <div class="forms-contact-legend__wrapper">
-              <h2 class="forms-contact-legend__h2  forms-contact-legend__h2--big">Контактные данные (владельца кота)</h2>
-            </div>
-          </section>
-          <section class="forms-contact">
-            <div class="forms-contact__content-wrapper">
-              <div class="forms-contact__label-wrapper">
-                <label class="forms-contact__label  forms-contact__label-email  forms-contact__label--big">
-                  <span class="forms-contact__label-contact  forms-contact__label-contact--big">E-mail:*</span>
-                  <input class="forms-contact__input forms-contact__input--background  forms-contact__input--mail" type="email" name="email" placeholder="kuklachev@gmail.com">
-                </label>
-                <label class="forms-contact__label  forms-contact__label-tel  forms-contact__label--big">
-                  <span class="forms-contact__label-contact  forms-contact__label-contact--big">телефон:*</span>
-                  <input class="forms-contact__input forms-contact__input--background  forms-contact__input-tel" type="text" name="tel" placeholder="8 (960) 900-60-90">
-                </label>
-              </div>
-            </div>
-          </section>
-          <section class="forms-comment-legend">
-            <div class="forms-comment-legend__wrapper">
-              <h2 class="forms-comment-legend__h2  forms-comment-legend__h2--big">Комментарий</h2>
-            </div>
-          </section>
-          <section class="forms-comment">
-            <div class="forms-comment__textarea-wrapper">
-              <textarea class="forms-comment__textarea  forms-comment__textarea--font" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </div>
-          </section>
-          <section class="forms-additionally-legend">
-            <div class="forms-additionally-legend__wrapper">
-              <h2 class="forms-additionally-legend__h2  forms-additionally-legend__h2--big">Дополнительно</h2>
-            </div>
-          </section>
-          <section class="forms-additionally"><!--Дополнительно-->
-            <section class="forms-additionally__item  forms-additionally__item-wrapper">
-              <input class="forms-additionally__item-checkbox" type="checkbox" name="additionally" id="Sweetener-field" checked><label class="forms-additionally__label" for="Sweetener-field">Сахарозаменитель</label>
-              <input class="forms-additionally__item-checkbox" type="checkbox" name="additionally" id="water-field"><label class="forms-additionally__label" for="water-field">Питьевая вода</label>
-              <input class="forms-additionally__item-checkbox" type="checkbox" name="additionally" id="milk-field"><label class="forms-additionally__label" for="milk-field">Молоко</label>
-              <input class="forms-additionally__item-checkbox" type="checkbox" name="additionally" id="drags-field"><label class="forms-additionally__label" for="drags-field">Витамины</label>
-            </section>
-          </section><!--/Дополнительно-->
-          <button class="info-forms__send  info-forms__send--big  info-forms__send--element" type="submit" value="Отправить заявку">Отправить заявку</button>
         </div>
+        <section class="forms-contact__title-contact  forms-contact__title--normal">
+            <h2 class="forms-contact__title-wrapper"><span class="forms-contact__legend-title  forms-contact__legend-title--smal">Контактные данные (владельца кота)</span></h2>
+        </section>
+        <section class="forms-contact__aria">
+          <div class="forms-contact__content-wrapper">
+            <div class="forms-contact__label-wrapper">
+              <label class="forms-contact__label  forms-contact__label-email  forms-contact__label--big">
+                <span class="forms-contact__label-contact  forms-contact__label-contact--big">E-mail:*</span>
+                <input class="forms-contact__input forms-contact__input--background  forms-contact__input--mail" type="email" name="email" placeholder="kuklachev@gmail.com">
+              </label>
+              <label class="forms-contact__label  forms-contact__label-tel  forms-contact__label--big">
+                <span class="forms-contact__label-contact  forms-contact__label-contact--big">телефон:*</span>
+                <input class="forms-contact__input forms-contact__input--background  forms-contact__input-tel" type="text" name="tel" placeholder="8 (960) 900-60-90">
+              </label>
+            </div>
+          </div>
+        </section>
+        <section class="forms-contact__title-comment  forms-contact__title--normal">
+          <h2 class="forms-contact__title-wrapper"><span class="forms-contact__legend-title">Комментарий</span></h2>
+        </section>
+        <section class="forms-comment">
+          <div class="forms-comment__textarea-wrapper">
+            <textarea class="forms-comment__textarea  forms-comment__textarea--font" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+        </section>
+        <section class="forms-contact__title-add">
+          <h2 class="forms-contact__title-wrapper"><span class="forms-contact__legend-title">Дополнительно</span></h2>
+        </section>
+        <section class="forms-additionally"><!--Дополнительно-->
+          <section class="forms-additionally__item  forms-additionally__item-wrapper">
+            <input class="forms-additionally__item-checkbox" type="checkbox" name="additionally" id="Sweetener-field" checked>
+            <label class="forms-additionally__label" for="Sweetener-field">Сахарозаменитель</label>
+            <input class="forms-additionally__item-checkbox" type="checkbox" name="additionally" id="water-field">
+            <label class="forms-additionally__label" for="water-field">Питьевая вода</label>
+            <input class="forms-additionally__item-checkbox" type="checkbox" name="additionally" id="milk-field">
+            <label class="forms-additionally__label" for="milk-field">Молоко</label>
+            <input class="forms-additionally__item-checkbox" type="checkbox" name="additionally" id="drags-field">
+            <label class="forms-additionally__label" for="drags-field">Витамины</label>
+          </section>
+        </section><!--/Дополнительно-->
+        <section class="forms-contact__title-btn">
+          <div class="forms-contact__title-wrapper">
+            <button class="info-forms__send  info-forms__send--big  info-forms__send--element" type="submit" value="Отправить заявку">Отправить заявку</button>
+          </div>
+        </section>
       </form>
     </section>
     <section class="contacts">

@@ -1,4 +1,6 @@
 .intro__wrapper {
+  display: flex;
+  flex-direction: column;
   width: 320px;
   //min-height: 501px;
   margin: 0 auto;
@@ -53,6 +55,7 @@
 
 .intro__programm-btn {
   display: block;
+  width: 280px;
   background-color: #68b738;
   text-transform: uppercase;
   padding-top: 11px;
@@ -64,4 +67,21 @@
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
+}
+
+
+@media (min-width: @tablet-widths) {
+  .intro__wrapper {
+    width: 708px;
+  }
+
+  .intro__programm-btn {
+    width: 245px;
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .intro__wrapper {
+    width: 1220px;
+  }
 }

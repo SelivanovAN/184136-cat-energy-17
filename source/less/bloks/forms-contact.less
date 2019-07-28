@@ -1,3 +1,61 @@
+// forms-contact__title-contact
+.forms-contact__title-contact,
+.forms-contact__title-comment,
+.forms-contact__title-add,
+.forms-contact__title-btn {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.forms-contact__title-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+}
+
+.forms-contact__legend-title--smal {
+  width: 184px;
+}
+
+.forms-contact__title-contact::before,
+.forms-contact__title-comment::before,
+.forms-contact__title-add::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #68b738;
+  width: 100%;
+  left: 0;
+  top: 56%;
+  transform: translate(0, -50%);
+  z-index: 1;
+}
+
+.forms-contact__legend-title {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  background-color: #fff;
+  padding-right: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.forms-contact__legend-title::before {
+  content: "";
+  width: 24px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: -24px;
+  top: 0;
+}
+// forms-contact__title-contact
+
 .forms-contact__content-wrapper {
   width: 280px;
   margin: 0 auto;
@@ -47,6 +105,10 @@
   background-color: #ffffff;
 }
 
+.forms-contact__title-btn {
+  margin-bottom: 80px;
+}
+
 .forms-contact__label-email::after {
   content: "";
   position: absolute;
@@ -74,6 +136,32 @@
 }
 
 @media (min-width: @tablet-widths) {
+  // forms-contact__title-contact
+  .forms-contact__title-wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .forms-contact__legend-title {
+    font-size: 36px;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+
+  .forms-contact__title-add {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .forms-contact__legend-title::before {
+    display: none;
+  }
+
+  .forms-contact__legend-title--smal {
+    width: 550px;
+  }
+// forms-contact__title-contact
+
   .forms-contact__content-wrapper {
     width: 632px;
   }
@@ -91,6 +179,50 @@
 }
 
 @media (min-width: @desktop-widths) {
+// forms-contact__title-contact
+  .forms-contact__title-wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .forms-contact__legend-title {
+    padding-left: 0;
+  }
+
+  .forms-contact__legend-title::before {
+    display: block;
+    width: 38px;
+    left: -38px;
+  }
+/* Для формы только
+.form-contact-title--normal {
+  padding-right: 44px
+}
+
+.form-contact-title--normal::before {
+  width: 44px;
+  left: -44px;
+}
+
+.form-contact-title--snal {
+  padding-right: 41px
+}
+
+.form-contact-title--snal::before {
+  width: 41px;
+  left: -41px;
+}
+*/
+// forms-contact__title-contact
+  .forms-contact__title-add {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .forms-contact__title-btn {
+    margin-bottom: 60px;
+  }
+
   .forms-contact__content-wrapper {
     width: 1220px;
   }
