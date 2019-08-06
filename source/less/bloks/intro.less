@@ -7,10 +7,11 @@
   padding-top: 29px;
   box-sizing: border-box;
   text-align: center;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: #68ac3f;
+
+  // background-image: url("../img/index-background-mobile@1x.jpg");
+  // background-repeat: no-repeat;
+  // background-position: 0 0;
+  // background-color: #68ac3f;
 }
 
 .intro__title {
@@ -73,11 +74,35 @@
 @media (min-width: @tablet-widths) {
   .intro__wrapper {
     width: 708px;
+    padding-left: 90px;
+    box-sizing: border-box;
   }
 
   .intro__programm-btn {
     width: 245px;
   }
+
+  .intro__title {
+    width: 414px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .intro__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .intro__img-btn {
+    padding-left: 0;
+  }
+
 }
 
 @media (min-width: @desktop-widths) {

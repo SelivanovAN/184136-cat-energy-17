@@ -1,9 +1,11 @@
 
 .example__wrapper {
+  position: relative;
   width: 320px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 37px;
+  padding-top: 33px;
   box-sizing: border-box;
   margin: 0 auto;
   background-color: #f2f2f2;
@@ -11,7 +13,7 @@
 
 .example__title {
   margin: 0;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
@@ -31,6 +33,7 @@
 .example__period {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 35px;
 }
 
@@ -95,6 +98,7 @@
 
 .example__price {
   margin-left: 47px;
+  margin-top: 40px;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
@@ -147,4 +151,122 @@
   line-height: 10px;
   font-weight: 400;
   color: #111111;
+}
+
+@media (min-width: @tablet-widths) {
+  .example__wrapper {
+    width: 708px;
+    height: 620px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 50px;
+    background-color: #ffffff;
+    margin-bottom: 460px;
+  }
+
+  .example__period {
+  align-items: center;
+}
+  .example__about {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__weight {
+    margin-right: 40px;
+  }
+
+  .example__weight,
+  .example__days {
+    width: 162px;
+    box-sizing: border-box;
+  }
+
+  .example__weight-about,
+  .example__days-about {
+    width: 110px;
+    background-color: #ffffff;
+    padding: 0;
+    bottom: -4px;
+    right: 24px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 56px;
+  }
+
+  .example__price {
+    margin: 0;
+    margin-left: auto;
+    width: 128px;
+    text-align: right;
+  }
+
+  .example__wrapper-image {
+    position: absolute;
+    width: 708px;
+    height: 460px;
+    background-color: #f2f2f2;
+    top: 600px;
+  }
+
+  .example__indicators {
+    position: absolute;
+    width: 570px;
+    bottom: -400px;
+    margin-top: 0;
+    left: 70px;
+  }
+
+  .example__befor,
+  .example__after {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .example__wrapper {
+    width: 1220px;
+    height: 620px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    background-color: #ffffff;
+    margin-bottom: 460px;
+  }
+
+  .example__about {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__weight-about,
+  .example__days-about {
+    background-color: #ffffff;
+    padding: 0;
+  }
+
+  .example__wrapper-image {
+    background-color: #f2f2f2;
+    top: 200px;
+  }
+
+  .example__indicators {
+    position: absolute;
+    width: 570px;
+    bottom: 70px;
+    margin-top: 0;
+    left: 70px;
+  }
+
+  .example__befor,
+  .example__after {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

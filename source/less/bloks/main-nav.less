@@ -17,9 +17,9 @@
 }
 
 .main-nav__item {
-  padding-top: 23px;
-  padding-bottom: 22px;
-  //position: relative;
+  // padding-top: 23px;
+  // padding-bottom: 22px;
+  // position: relative;
 }
 
 .main-nav__list {
@@ -43,14 +43,28 @@
 @media (min-width: @tablet-widths) {
   .main-nav {
     display: flex;
+    justify-content: space-between;
   }
 
   .main-nav__items {
     display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: none;
   }
 
   .main-nav__lists {
     display: flex;
+  }
+
+  .main-nav__list {
+    border-bottom: none;
+    margin-left: 36px;
+  }
+
+  .main-nav__link {
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .main-nav__item-btn--off,
@@ -62,6 +76,7 @@
 @media (min-width: @desktop-widths) {
   .main-nav {
     display: flex;
+    width: 100%;
   }
 
   .main-nav__items {
