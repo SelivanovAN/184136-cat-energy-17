@@ -71,6 +71,19 @@
   .main-nav__item--off {
     display: none;
   }
+  .main-nav__link--active {
+    position: relative;
+  }
+
+  .main-nav__link--active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #68b738;
+  }
 }
 
 @media (min-width: @desktop-widths) {
@@ -90,5 +103,19 @@
   .main-nav__item-btn--off,
   .main-nav__item--off {
     display: none;
+  }
+
+  .main-nav__link--white {
+    color: #ffffff;
+  }
+
+  .main-nav__link--active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
   }
 }
