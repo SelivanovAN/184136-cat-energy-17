@@ -1,4 +1,6 @@
 .advantages__wrapper {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   margin: 0 auto;
   padding-top: 20px;
@@ -7,7 +9,7 @@
 
 .advantages__title {
   margin: 0;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
@@ -15,14 +17,22 @@
   color: #111111;
 }
 
+.advantages__wrapper-items {
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages__item {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  padding-top: 0;
+  box-sizing: border-box;
 }
 
 .advantages__item-about {
   display: block;
   margin: 0;
-  margin-top: 20px;
   margin-bottom: 20px;
   padding-left: 80px;
   padding-right: 40px;
@@ -87,4 +97,90 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.advantages__number {
+  display: none;
+}
+
+@media (min-width: @tablet-widths) {
+  .advantages {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .advantages__wrapper {
+    width: 708px;
+  }
+
+  .advantages__wrapper-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    position: relative;
+    width: 245px;
+    height: 230px;
+    padding-top: 80px;
+    margin-right: 140px;
+    margin-bottom: 90px;
+  }
+
+  .advantages__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .advantages__item:last-child {
+    margin-right: 0;
+  }
+
+  .advantages__item-about {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .advantages__number {
+    display: block;
+    position: absolute;
+    top: -37px;
+    right: 0;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    font-weight: 400;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @desktop-widths) {
+  .advantages {
+    border-bottom: none;
+  }
+
+  .advantages__wrapper {
+    width: 1220px;
+  }
+
+  .advantages__item {
+    width: 245px;
+  }
+
+  .advantages__wrapper-items .advantages__item {
+    margin-right: 80px;
+  }
+
+  .advantages__item:last-child {
+    margin-right: 0;
+  }
+
+  .advantages__number {
+    display: block;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    font-weight: 400;
+  }
 }

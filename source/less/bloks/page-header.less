@@ -3,6 +3,14 @@
   margin: 0 auto;
 }
 
+.page-header__img {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  // background-position: 0 0;
+  // background-position: center;
+  background-position: center 265px;
+}
+
 .page-header__close {
   //position: absolute;
   width: 18px;
@@ -14,4 +22,32 @@
   background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-width: @tablet-widths) {
+  .page-header__wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .page-header__img {
+    background-image: none;
+  }
+
+}
+
+@media (min-width: @desktop-widths) {
+  .page-header__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .page-header__img {
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    // background-position: 0 0;
+    // background-position: center;
+    background-position: top right;
+  }
 }
