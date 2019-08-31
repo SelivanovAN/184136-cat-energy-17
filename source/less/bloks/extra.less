@@ -44,7 +44,6 @@
 
 .extra__about-item td {
   padding: 14px 0;
-  // border-bottom: 1px solid #aaa;
 }
 
 .extra__about-cost {
@@ -71,12 +70,39 @@
   justify-content: center;
   align-items: center;
   height: 289px;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  // background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: #6eb245;
   box-sizing: border-box;
   margin-bottom: 35px;
+/*
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }*/
+
+  @media (max-width: 767px) and (min-resolution: 144dpi),
+  (max-width: 767px) and (min-resolution: 1.5dppx) {
+  background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
+  @media (min-width: 768px) {
+  background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  @media (min-width: 768px) and (min-resolution: 144dpi),
+  (min-width: 768px) and (min-resolution: 1.5dppx) {
+  background-image: url("../img/gift-photo-tablet@2x.jpg");
+  }
+
+  @media (min-width: 1200px) {
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  @media (min-width: 1200px) and (min-resolution: 144dpi),
+          (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  background-image: url("../img/gift-photo-desktop@2x.jpg");
+  }
 }
 
 .extra__img-gift {
@@ -96,7 +122,6 @@
   margin-bottom: 42px;
   text-align: center;
 }
-
 
 @media (min-width: @tablet-widths) {
   .extra__content-wrapper {
@@ -130,9 +155,14 @@
     height: 200px;
     flex-direction: row;
     justify-content: space-around;
+    // background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-size: cover;
     background-position-y: -335px;
     margin-bottom: 76px;
+/*
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }*/
   }
 
   .extra__img-gift {
@@ -192,10 +222,16 @@
     height: 287px;
     flex-direction: column;
     justify-content: space-around;
+    // background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-size: cover;
     background-position-y: 0;
     margin-bottom: 0;
     margin-left: 80px;
+/*
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }*/
+
   }
 
   .extra__img-gift {
