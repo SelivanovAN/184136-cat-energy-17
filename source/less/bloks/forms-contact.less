@@ -85,7 +85,7 @@
 }
 
 .forms-contact__input {
-  border: 1px solid #e7e7e7;
+  border: 1px solid rgba(205, 205, 205, 0.5);
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 41px;
@@ -101,6 +101,19 @@
   font-weight: 400;
   color: #444444;
   background-color: #ffffff;
+  cursor: pointer;
+}
+
+.forms-contact__input:hover {
+  border: 1px solid rgba(205, 205, 205, 1);
+}
+
+.forms-contact__input:active {
+  border: 1px solid rgba(68, 68, 68, 1);
+}
+
+.forms-contact__input:invalid {
+  border: 1px solid rgba(255, 130, 130, 1);
 }
 
 .forms-contact__title-btn {
