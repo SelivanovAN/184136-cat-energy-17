@@ -58,7 +58,7 @@
 
 .forms-program__introduce-input {
   flex-grow: 1;
-  border: 1px solid #e7e7e7;
+  border: 1px solid rgba(205, 205, 205, 0.5);
   box-sizing: border-box;
   padding-left: 16px;
   padding-top: 13px;
@@ -71,6 +71,19 @@
   line-height: 18px;
   font-weight: 400;
   color: #444444;
+  cursor: pointer;
+}
+
+.forms-program__introduce-input:hover {
+  border: 1px solid rgba(205, 205, 205, 1);
+}
+
+.forms-program__introduce-input:active {
+  border: 1px solid rgba(68, 68, 68, 1);
+}
+
+.forms-program__introduce-input:invalid {
+  border: 1px solid rgba(255, 130, 130, 1);
 }
 
 .forms-program__introduce-input:last-child {
@@ -88,8 +101,9 @@
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
+  border-top: 1px solid rgba(205, 205, 205, 0.5);
+  border-bottom: 1px solid rgba(205, 205, 205,0.5);
+  box-sizing: border-box;
 }
 
 .forms-program__choise-item {
@@ -165,8 +179,10 @@
   }
 
   .forms-program__choise {
+    width: 630px;
+    height: 196px;
     margin-left: 70px;
-    border-left: 1px solid #ededed;
+    border: 1px solid rgba(205, 205, 205, 0.5);
   }
 
   .forms-program__choise-label {
@@ -233,17 +249,21 @@
   }
 
   .forms-program__choise {
-    min-width: 570px;
+    max-width: 570px;
     box-sizing: border-box;
     height: 183px;
     margin: 0;
     margin-top: 35px;
-    border-right: 1px solid #ededed;
+    border: 1px solid rgba(205, 205, 205, 0.5);
   }
 
   .forms-program__choise-label {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .forms-program__choise-label:active {
+    opacity: 0.3;
   }
 
   .forms-program__choise-item:checked + .forms-program__choise-label::after {

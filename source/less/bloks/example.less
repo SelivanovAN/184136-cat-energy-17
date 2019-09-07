@@ -4,8 +4,8 @@
   width: 320px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 37px;
-  padding-top: 33px;
+  padding-bottom: 36px;
+  padding-top: 9px;
   box-sizing: border-box;
   margin: 0 auto;
   background-color: #f2f2f2;
@@ -21,12 +21,14 @@
 }
 
 .example__about {
-  padding-right: 58px;
+  padding-right: 10px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: #444444;
+  letter-spacing: 1.5px;
+  margin-bottom: 27px;
 }
 
 .example__period {
@@ -68,7 +70,7 @@
   width: 87px;
   bottom: -18px;
   right: 16px;
-  padding-left: 15px;
+  padding-left: 11px;
   padding-right: 15px;
   box-sizing: border-box;
   background-color: #f2f2f2;
@@ -77,6 +79,7 @@
   line-height: 12px;
   font-weight: 400;
   color: #444444;
+  letter-spacing: 1.5px;
 }
 
 .example__days-about {
@@ -84,7 +87,7 @@
   width: 87px;
   bottom: -18px;
   right: 16px;
-  padding-left: 15px;
+  padding-left: 12px;
   padding-right: 15px;
   box-sizing: border-box;
   background-color: #f2f2f2;
@@ -93,11 +96,12 @@
   line-height: 12px;
   font-weight: 400;
   color: #444444;
+  letter-spacing: 1.5px;
 }
 
 .example__price {
   margin-left: 47px;
-  margin-top: 40px;
+  margin-top: 35px;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
@@ -113,14 +117,25 @@
 
 .example__indicators {
   display: flex;
-  margin-top: 30px;
+  margin-top: 0;
   justify-content: space-around;
   align-items: center;
+  padding-left: 35px;
+  padding-right: 30px;
+  padding-top: 271px;
+}
+
+.example__wrapper-image {
+  position: relative;
+  // width: 400px;
 }
 
 .example__image {
-  max-width: 100%;
+  position: absolute;
+  width: 320px;
   height: auto;
+  right: -20px;
+  top: -1px;
 }
 
 .example__befor,
@@ -168,7 +183,7 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
-    padding-top: 50px;
+    padding-top: 46px;
     background-color: #ffffff;
   }
 
@@ -179,6 +194,9 @@
   .example__about {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 55px;
+    letter-spacing: 1.5px;
+    padding-right: 30px;
   }
 
   .example__weight {
@@ -189,29 +207,45 @@
   .example__days {
     width: 162px;
     box-sizing: border-box;
+    padding-top: 17px;
+    padding-bottom: 24px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .example__weight-measurement,
+  .example__days-measurement {
+    font-size: 30px;
+    line-height: 30px;
   }
 
   .example__weight-about,
   .example__days-about {
-    width: 110px;
+    width: 126px;
     background-color: #ffffff;
     padding: 0;
     bottom: -4px;
-    right: 24px;
+    right: 16px;
     font-size: 14px;
     line-height: 14px;
   }
+
+  .example__price {
+    width: 186px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 0;
+    margin-top: 58px;
+    margin: 0;
+    margin-left: auto;
+    text-align: right;
+  }
+
   .example__title {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 56px;
-  }
-
-  .example__price {
-    margin: 0;
-    margin-left: auto;
-    width: 128px;
-    text-align: right;
   }
 
   .example__last-chapter {
@@ -224,7 +258,7 @@
     background-color: #f2f2f2;
     box-sizing: border-box;
     padding-top: 234px;
-    padding-bottom: 45px;
+    padding-bottom: 75px;
   }
 
   .example__wrapper-image {
@@ -238,8 +272,16 @@
   }
 
   .example__indicators {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
     width: 570px;
-    margin-top: 0;
+    margin-top: 135px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 570px;
+    padding-top: 0px;
   }
 
   .example__befor,
@@ -247,19 +289,20 @@
     position: relative;
     font-size: 20px;
     line-height: 20px;
-    // border-bottom: 1px solid #bebebe;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
-  .example__indicators {
-    display: flex;
-    margin-top: 30px;
-    justify-content: space-between;
-    align-items: center;
+  .example__image {
+    width: 585px;
+    top: -331px;
+    left: 3%;
   }
 
   .example__circul {
     width: 427px;
     background-color: #dcdcdc;
+    height: 4px;
   }
 
   .example__circul-green {
@@ -273,7 +316,7 @@
     width: 46px;
     height: 1px;
     left: 0;
-    top: 40px;
+    top: 27px;
     background-color: #bebebe;
   }
 }
@@ -290,9 +333,10 @@
     width: 1220px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 0;
+    padding-bottom: 34px;
     background-color: inherit;
     margin-bottom: 0;
+    padding-top: 54px;
   }
 
   .example__period {
@@ -302,6 +346,24 @@
   .example__about {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 71px;
+    letter-spacing: 1.5px;
+    padding-right: 10px;
+  }
+
+  .example__weight,
+  .example__days {
+    padding-top: 17px;
+    padding-bottom: 24px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .example__weight-measurement,
+  .example__days-measurement {
+    font-size: 30px;
+    line-height: 30px;
   }
 
   .example__weight-about,
@@ -320,7 +382,7 @@
     line-height: 20px;
     margin-left: 0;
     text-align: left;
-    margin-top: 56px;
+    margin-top: 58px;
   }
 
   .example__last-chapter {
@@ -328,6 +390,7 @@
     margin-left: auto;
     padding-top: 0;
     margin-top: 0;
+    padding-bottom: 45px;
   }
 
   .example__wrapper-image {
@@ -336,8 +399,14 @@
 
   .example__indicators {
     width: 570px;
-    margin-top: 230px;
+    margin-top: 45px;
+    padding-left: 39px;
+    padding-top: 271px;
   }
+
+  .example__circul {
+    width: 427px;
+}
 
   .example__befor,
   .example__after {
@@ -350,4 +419,9 @@
     top: 24px;
   }
 
+  .example__image {
+    width: 610px;
+    top: -186px;
+    left: 2%;
+  }
 }
