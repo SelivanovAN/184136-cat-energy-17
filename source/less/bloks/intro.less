@@ -10,7 +10,7 @@
 
 .intro__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-left: 36px;
   padding-right: 35px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -33,7 +33,7 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 135px;
-  margin-top: 135px;
+  margin-top: 153px;
   background-color: #ffffff;
   padding-bottom: 22px;
 }
@@ -44,8 +44,8 @@
 
 .intro__image {
   position: absolute;
-  top: -259px;
-  left: 11px;
+  top: -274px;
+  left: 0;
 }
 
 .intro__programm-btn {
@@ -56,7 +56,7 @@
   padding-top: 11px;
   padding-bottom: 11px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -74,14 +74,23 @@
 }
 
 @media (min-width: @tablet-widths) {
+  .intro {
+    margin-bottom: 179px;
+  }
+
   .intro__wrapper {
     width: 708px;
-    padding-left: 90px;
+    padding-left: 87px;
     box-sizing: border-box;
+    padding-top: 50px;
   }
 
   .intro__programm-btn {
     width: 245px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
   }
 
   .intro__title {
@@ -91,6 +100,7 @@
     color: #111111;
     padding-left: 0;
     text-align: left;
+    margin-bottom: 22px;
   }
 
   .intro__slogan {
@@ -102,31 +112,35 @@
   }
 
   .intro__img-btn {
-    padding-left: 0;
+    padding-left: 2px;
     padding-top: 0;
-    margin-top: 0;
+    margin-top: 8px;
     padding-bottom: 350px;
     background-color: inherit;
-
   }
 
   .intro__image {
+    width: 710px;
+    height: 609px;
     position: absolute;
-    top: 24px;
-    left: 135px;
+    top: -8px;
+    left: -91px;
     z-index: -3;
   }
 }
 
 @media (min-width: @desktop-widths) {
   .intro {
-    padding-bottom: 320px;
+    padding-bottom: 219px;
     margin-bottom: 50px;
   }
 
   .intro__wrapper {
     width: 1220px;
+    padding-left: 80px;
+    padding-top: 103px;
   }
+
   .intro__image {
     width: 552px;
     height: 499px;
@@ -136,15 +150,21 @@
   .intro__img-btn {
     background-color: inherit;
     padding-top: 0;
-    margin-top: 0;
+    margin-top: 12px;
     padding-bottom: 0;
+    padding-left: 0;
   }
 
   .intro__programm-btn {
     cursor: pointer;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
   }
 
   .intro__image {
     z-index: 0;
+    top: -294px;
+    left: 369px;
   }
 }
